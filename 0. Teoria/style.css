@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* JUSTIFICAR CONTENEDOR */
+/* .container {
+  background-color: #202020;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.uno,
+.dos,
+.tres {
+  background: #f13929;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+}
+.dos {
+  background: #7250ff;
+}
+.tres {
+  background: #01d0fb;
+} */
+
+
+/* ALINEAR CONTENEDOR */
+/* .container{
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.boxcontainer{
+    background-color: #7250ff;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.uno{
+    background: #f13929;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+} */
+
+
+/* POSICION FIXED */
+.padre{
+    width: 200px;
+    height: 200px;
+    background: #f13929;
+    position: absolute;
+    left: 200px;
+    /* position: fixed;
+    right: 0;
+    bottom: 0; */
+}
+
+.hijo{
+    width: 50px;
+    height: 50px;
+    background: #7888ea;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+ }

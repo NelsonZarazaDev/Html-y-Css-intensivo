@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #48daee;
+  /* La perspectiva se le da al padre para que la rotacion se vea bien */
+  perspective: 1000px;
+  perspective-origin: 800px;
+  /* Que todo preserve y respeta la dimension 3d */
+  transform-style: preserve-3d;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #7250ff;
+  border-radius: 15px;
+  transition: 1s;
+  /* La rotacion necesita en su padre la perpective */
+  /* transform: rotateY(50deg); */
+
+  /* La rotacion 3d necesita en su padre la perpective */
+  /* Rotacion 3d x,y,z,grad */
+  /* transform: rotate3d(1,1,1,50deg); */
+
+  /* La translateZ necesita en su padre la perpective y la perspective-origin ademas de transform-style: preserve-3d si es negativo el translateZ va a tras y positivo adelante */
+  /* transform: translateZ(200px); */
+  /* transform: translate3d(50px, 100px, 45px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(50deg);
+  /* Que todo preserve y respeta la dimension 3d */
+  transform-style: preserve-3d;
+}
+
+.front {
+  width: 100px;
+  height: 100px;
+  background: #f0db4f;
+  border-radius: 15px;
+  transform: rotateX(50deg);
+
+}
+
+.box:hover{
+    transform: rotate3d(0,0,1,800deg)
+}
