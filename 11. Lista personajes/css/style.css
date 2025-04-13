@@ -9,12 +9,13 @@
 
 section {
   position: relative;
-  background: #161623;
+  background: #161623; 
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  
   &::before {
     content: "";
     position: absolute;

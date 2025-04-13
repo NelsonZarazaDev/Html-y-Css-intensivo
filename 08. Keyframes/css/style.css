@@ -19,7 +19,7 @@ body {
 
     & .bubbles {
       position: relative;
-      display: flex;
+      display: flex; 
 
       & span {
         position: relative;

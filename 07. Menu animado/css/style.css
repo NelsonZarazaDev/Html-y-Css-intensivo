@@ -11,11 +11,13 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 body ul {
   position: relative;
   display: flex;
   gap: 25px;
 }
+
 body ul li {
   position: relative;
   list-style: none;
@@ -30,25 +32,31 @@ body ul li {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
+
 body ul li:hover {
   width: 180px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
 }
+
 body ul li:hover::before {
   opacity: 1;
 }
+
 body ul li:hover::after {
   opacity: 0.5;
 }
+
 body ul li:hover ion-icon {
   transform: scale(0);
   color: #fff;
   transition-delay: 0.25s;
 }
+
 body ul li:hover .title {
   transform: scale(1);
   transition-delay: 0.25s;
 }
+
 body ul li::before {
   content: "";
   position: absolute;
@@ -58,6 +66,7 @@ body ul li::before {
   opacity: 0;
   transition: 0.5s;
 }
+
 body ul li::after {
   content: "";
   position: absolute;
@@ -71,15 +80,18 @@ body ul li::after {
   z-index: -1;
   opacity: 0;
 }
+
 body ul li ion-icon {
   color: #777;
   font-size: 1.75em;
   transition: 0.5s;
   transition-delay: 0.25s;
 }
+
 body ul li span {
   position: absolute;
 }
+
 body ul li .title {
   color: #fff;
   font-size: 1.1em;
